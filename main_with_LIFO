@@ -1,0 +1,110 @@
+#include <SFML/Graphics.hpp>
+#include <stack>
+#include <iostream>
+#include "Board.hpp"
+#include "Welcome.hpp"
+#include "BackDrop.hpp"
+#include "RandomizeButton.hpp"
+#include "StandardButton.hpp"
+#include "UndoButton.hpp"
+#include "Move.hpp"
+#include "BackButton.hpp"
+
+void undoLastMove(std::stack<Move>& history, Board& board)
+{
+    if (history.empty())
+    {
+        std::cout << "No moves left to undo." << std::endl;
+        return;
+    }
+
+    Move lastMove = history.top();
+    history.pop();
+
+    std::cout << "--- UNDOING MOVE ---" << std::endl;
+    std::cout << "Move popped from stack. History size is now: " << history.size() << std::endl;
+
+    
+}
+
+
+int main(void)
+{
+    sf::RenderWindow *window = new sf::RenderWindow(sf::VideoMode({ 1000, 1000 }), "Checkers-Adjacent");
+    std::stack<Move> moves;
+
+    Welcome WelcomeBackDrop;
+    BackDrop Back;
+    RandomizeButton Randomized;
+    StandardButton Standard;
+    UndoButton Undo;
+    BackButton BackButton;
+
+    Mode mode;
+    Board B;
+    sf::Vector2f mouse;
+    int state = 0;
+
+    while (window->isOpen())
+    {
+        mouse = window->mapPixelToCoords(sf::Mouse::getPosition(*window));
+        
+        while (const std::optional event = window->pollEvent())
+        {
+            if (event->is<sf::Event::Closed>())
+                window->close();
+
+            if (event->is<sf::Event::MouseButtonPressed>())
+            {
+                if (event->getIf<sf::Event::MouseButtonPressed>()->button == sf::Mouse::Left)
+                {
+                    if (state == 0)
+                    {
+                        if (Standard.getGlobalBounds().contains(mouse))
+                        {
+                            mode = STANDARD;
+                            state = 1;
+                        }
+                        else if (Randomized.getGlobalBounds().contains(mouse))
+                        {
+                            mode = RANDOM;
+                            state = 1;
+                        }
+                    }
+                    else if (state == 1)
+                    {
+                        if (Undo.getGlobalBounds().contains(mouse))
+                        {
+                            undoLastMove(moves, B);
+                        }
+                        else if (BackButton.getGlobalBounds().contains(mouse))
+                        {
+                            state = 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        if (!state)
+        {
+            window->clear(sf::Color::Black);
+            window->draw(WelcomeBackDrop);
+            window->draw(Randomized);
+            window->draw(Standard);
+        }
+        else
+        {
+            window->clear(sf::Color::Black);
+            window->draw(Back);
+            B.Draw(*window);
+            window->draw(Undo);
+            window->draw(BackButton);
+        }
+
+        window->display();
+    }
+
+    delete window;
+	return 0;
+}
