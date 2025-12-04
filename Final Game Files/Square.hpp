@@ -1,4 +1,4 @@
-// This Header File contains the class that contains the information for the chessboard.
+// This Header File contains the class that contains the information for the individual squares of the chessboard.
 // This class contains the details of the individual squares on the chess board and the functions that 
 // set the color of the squares and the positions of the squares. It also has functions that determine if the 
 // squares are occupied or not
@@ -50,3 +50,4 @@ private:
 	static sf::Texture blackSquare, whiteSquare, activeWhite, activeBlack;
 
 };
+
