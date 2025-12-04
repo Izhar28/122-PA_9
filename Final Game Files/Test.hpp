@@ -1,3 +1,4 @@
+// This Header File contains the different tests that were applied to this project.
 #pragma once
 #include "Run.hpp"
 
@@ -93,4 +94,5 @@ void testClickedGame()
     // The clicked piece should be the selected piece
     assert(game.selectedPiece == pawn);
     std::cout << "testClickedGame passed!" << std::endl;
+
 }
