@@ -1,3 +1,6 @@
+// This main file prints out the display for the game and the background textures 
+// as well as the main menu from the Run.hpp File. Once the game has initialized correctly 
+// This main File will execute the game.
 #include "Run.hpp"
 
 int main(void)
@@ -131,4 +134,5 @@ int main(void)
     delete window;
     return 0;
 }
+
 
