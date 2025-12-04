@@ -1,3 +1,5 @@
+// This cpp File contains all the code that relates to the Pawn piece in the game of chess. 
+// This File contains the code to determine the color of the piece and the movement pattern the Pawn has in a regular game.
 #include "Pawn.hpp"
 
 Pawn::Pawn() : Piece()
@@ -69,4 +71,5 @@ void Pawn::movementSquares(Board& gameBoard)
 			gameBoard.getSquares((ChessCol)(i - 1), row + direction)->setState(ACTIVE);
 		}
 	}
+
 }
