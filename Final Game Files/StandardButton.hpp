@@ -1,3 +1,5 @@
+// This Header File contains the Standard button class. This class gives the option to the player to run a 
+// standard game of chess. This class also prints the standard button to the main menu for the player to click on.
 #pragma once
 #include <SFML/Graphics.hpp>
 
@@ -16,5 +18,6 @@ public:
 	}
 
 	~StandardButton() {}
+
 
 };
