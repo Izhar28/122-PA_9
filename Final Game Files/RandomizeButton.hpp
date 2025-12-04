@@ -1,4 +1,5 @@
-// This Header File contains a class that randomizes the location of the chess pieces.
+// This Header File contains a class that randomizes the location of the chess pieces. This class also 
+// prints the Randomize button to the main menu for the player to click on when deciding which style of chess to play.
 #pragma once
 #include <SFML/Graphics.hpp>
 
@@ -19,3 +20,4 @@ public:
 	~RandomizeButton() {}
 
 };
+
