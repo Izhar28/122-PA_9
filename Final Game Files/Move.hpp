@@ -1,3 +1,5 @@
+// This Header File contains the class that contains the functions that set the movements of each piece.
+// This class also gets the moves from the user for each piece.
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "Types.hpp"
@@ -21,4 +23,5 @@ public:
 private:
 	WhiteMove whiteMove;
 	BlackMove blackMove;
+
 };
