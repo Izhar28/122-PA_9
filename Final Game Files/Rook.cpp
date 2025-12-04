@@ -1,3 +1,5 @@
+// This cpp File contains all the code that relates to the Rook piece in the game of chess. 
+// This File contains the code to determine the color of the piece and the movement pattern the Rook has in a regular game.
 #include "Rook.hpp"
 
 Rook::Rook() : Piece()
@@ -91,4 +93,5 @@ void Rook::movementSquares(Board& gameBoard)
 			break;
 		}
 	}
+
 }
