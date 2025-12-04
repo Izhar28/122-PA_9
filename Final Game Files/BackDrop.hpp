@@ -1,3 +1,5 @@
+// This Header file holds the class that prints the back drop of the gameboard. 
+// This file also allows the backdrop to change depending on either the black side wins or the white side wins
 #pragma once
 #include <SFML/Graphics.hpp>
 
@@ -38,4 +40,5 @@ public:
 	}
 
 	~BackDrop() {}
+
 };
