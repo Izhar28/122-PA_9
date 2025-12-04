@@ -1,5 +1,6 @@
 // This Header File contains the class of the Bishop piece in chess.
-// This class assignes the color of the piece and determines the movement pattern of the piece
+// This class assigns the color of the piece and determines the movement pattern of the piece
+
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
@@ -16,3 +17,4 @@ public:
 	void movementSquares(Board& gameBoard) override;
 
 };
+
