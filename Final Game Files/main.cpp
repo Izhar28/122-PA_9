@@ -68,7 +68,7 @@ int main(void)
 
             if (event->is<sf::Event::MouseButtonPressed>()) // if mouse Button pressed
             {
-                if (event->getIf<sf::Event::MouseButtonPressed>()->button == sf::Mouse::Button::Left)
+                if (event->getIf<sf::Event::MouseButtonPressed>()->button == sf::Mouse::Button::Left) // If mouse button is clicked
                 {
                     if (state == 0)
                     {
@@ -76,18 +76,18 @@ int main(void)
                     }
                     else // Gameplay is active
                     {
-                        if (!initialized)
+                        if (!initialized) // if pieces have not been initialized, then initialize them
                         {
                             run.initializePieces(*gameBoard);
                             initialized = true;
                         }
-                        if (run.Undo->getGlobalBounds().contains(mouse))
+                        if (run.Undo->getGlobalBounds().contains(mouse)) // undo button
                         {
                             run.clicked = UNDO;
                             gameBoard->deactivateSquares();
                             run.undoLastMove(*gameBoard);
                         }
-                        else if (run.backButton->getGlobalBounds().contains(mouse))
+                        else if (run.backButton->getGlobalBounds().contains(mouse)) // back to main menu button
                         {
                             run.clicked = BACKBUTTON;
                             state = 0;
@@ -96,6 +96,7 @@ int main(void)
                         }
                         else
                         {
+                            // checks to see which turn it is and if the correct colors turn is being activated, the move will be followed through
                             for (int i = 0; i < run.pieces.size(); ++i)
                             {
                                 Piece* p = run.pieces[i];
@@ -104,15 +105,16 @@ int main(void)
                                     run.clickedGame(p, mouse, &state, *gameBoard);
                                 }
                             }
-                            if (run.selectedPiece)
+                            
+                            if (run.selectedPiece) // if a piece is currently selected
                             {
-                                for (int i = 0; i < 8; ++i) // checks for active squares
+                                for (int i = 0; i < 8; ++i) // checks for active squares -- columns
                                 {
-                                    for (int j = 0; j < 8; ++j)
+                                    for (int j = 0; j < 8; ++j)  // checks for active squares -- rows
                                     {
                                         if (gameBoard->getSquares((ChessCol)i, j)->getState() == ACTIVE && gameBoard->getSquares((ChessCol)i, j)->getGlobalBounds().contains(mouse))
                                         {
-                                            run.move(gameBoard, mouse, run.selectedPiece, &state);
+                                            run.move(gameBoard, mouse, run.selectedPiece, &state); // move piece
                                             break;
                                         }
                                     }
@@ -129,3 +131,4 @@ int main(void)
     delete window;
     return 0;
 }
+
