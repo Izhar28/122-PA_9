@@ -1,3 +1,6 @@
+// This cpp File contains the code that gets the color of the pieces and the locations of the pieces
+// and then places the pieces in place on the board. This File also prints the textures of the pieces 
+// and sets the new location of the pieces once instructed to
 #include "Piece.hpp"
 
 sf::Texture Piece::BluePawn, Piece::TanPawn, Piece::BlueRook, Piece::TanRook, Piece::BlueKnight, Piece::TanKnight, Piece::BlueBishop, Piece::TanBishop, Piece::BlueQueen, Piece::TanQueen, Piece::BlueKing, Piece::TanKing;
@@ -112,4 +115,5 @@ void Piece::loadTextures()
 	TanQueen.loadFromFile("TanQueen.png");
 	BlueKing.loadFromFile("BlueKing.png");
 	TanKing.loadFromFile("TanKing.png");
+
 }
