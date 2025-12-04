@@ -2,46 +2,46 @@
 # Team Members: Gus Ballman: Lab Section:1 , Izhar Nolasco: Lab Section:3 , Cort Locke: Lab Section:7
 Overview
 
-This game follows the fundamental movement mechanics of standard Chess but introduces a simplified win condition and a chaotic game mode.
+It's basically chess, but with a simplified ending and a fun random mode.
 
-Core Rules
+The Rules
 
-1. Movement
+1. Moving Pieces
 
-All pieces (Pawns, Rooks, Knights, Bishops, Queens, Kings) move according to Standard Chess Rules.
+All pieces move exactly like they do in Standard Chess.
 
-En passant, castling, and pawn promotion follow standard rules unless otherwise specified.
+Special moves like Castling and En Passant still work the same way.
 
-2. No Check or Checkmate
+2. No "Check" or "Checkmate"
 
-The concepts of "Check" and "Checkmate" are disabled.
+We disabled the concepts of Check and Checkmate.
 
-A player is allowed to move their King into a square where it can be attacked.
+You don't have to announce "Check."
 
-A player is not forced to move their King out of danger if it is currently under attack.
+You are allowed to move your King into danger if you want (though it’s not a great idea).
 
-3. Win Condition
+If your King is in danger, you aren't forced to move it—you can play other pieces instead.
 
-Capture the King: The game is won by physically capturing the opponent's King.
+3. How to Win
 
-The game ends immediately when the King is removed from the board.
+Capture the King: The game ends the moment you physically capture the opponent's King.
+
+Just take the King off the board to win.
 
 Game Modes
 
 Standard Mode
 
-Classic Setup: The board is initialized with the traditional Chess layout.
+Classic Setup: The board looks just like a normal chess game.
 
-White pieces occupy rows 1 and 2.
+White pieces are at the bottom, Black pieces are at the top.
 
-Black pieces occupy rows 7 and 8.
-
-Rooks on corners, followed by Knights, Bishops, and the King/Queen in the center.
+Everything is where you expect it to be.
 
 Random Mode
 
-Chaos Setup: The back-rank pieces (Rooks, Knights, Bishops, Queen) are placed in randomized positions.
+Randomized Back Row: The heavy hitters (Rooks, Knights, Bishops, Queen) are shuffled into random spots on the back row.
 
-King Stability: The King remains in its standard starting position (E1 for White, E8 for Black) to ensure the game starts fairly.
+King Stays Put: To keep things fair, the King always starts in its normal spot (E1 for White, E8 for Black).
 
-Pawns remain in their standard rows (Rows 2 and 7).
+Pawns: Pawns stay in their normal rows.
