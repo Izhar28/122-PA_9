@@ -16,10 +16,6 @@ Special moves like Castling and En Passant still work the same way.
 
 We disabled the concepts of Check and Checkmate.
 
-You don't have to announce "Check."
-
-You are allowed to move your King into danger if you want (though it’s not a great idea).
-
 If your King is in danger, you aren't forced to move it—you can play other pieces instead.
 
 3. How to Win
