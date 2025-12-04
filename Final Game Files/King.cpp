@@ -1,3 +1,5 @@
+// This cpp File contains all the code that relates to the King piece in the game of chess. 
+// This File contains the code to determine the color of the piece and the movement pattern the King has in a regular game.
 #include "King.hpp"
 
 King::King() : Piece()
@@ -66,3 +68,4 @@ void King::movementSquares(Board& gameBoard)
 		gameBoard.getSquares((ChessCol)i, row - 1)->setState(ACTIVE);
 	}
 }
+
