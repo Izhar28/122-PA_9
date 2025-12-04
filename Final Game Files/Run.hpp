@@ -1,3 +1,5 @@
+// This Header File contains every other Header File so that it can run the game of chess.
+// The class contains the functions that will allow the player to interact with the game and play
 #pragma once
 #include <stack>
 #include "Board.hpp"
@@ -56,5 +58,6 @@ public:
 
 	// textures
 	static sf::Texture welcome, backDrop, random, standard, Backtext, undoButton, whiteWins, blackWins, underConstruction;
+
 
 };
