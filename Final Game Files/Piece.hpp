@@ -1,3 +1,6 @@
+// This Header File contains the class for each individual piece of the chessboard. This class gets the current column 
+// and row location and puts down a chess piece on the current square as long as it isn't occupied.
+// This class also sets the color of the pieces depending on the side the pieces are on
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "Types.hpp"
@@ -26,4 +29,5 @@ protected:
 	void SetPosition(ChessCol newColumn, int newRow, Board& gameBoard);
 
 	static sf::Texture BluePawn, TanPawn, BlueRook, TanRook, BlueKnight, TanKnight, BlueBishop, TanBishop, BlueQueen, TanQueen, BlueKing, TanKing;
+
 };
