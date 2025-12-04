@@ -1,3 +1,7 @@
+// This Header File contains the class that contains the information for the chessboard.
+// This class contains the details of the individual squares on the chess board and the functions that 
+// set the color of the squares and the positions of the squares. It also has functions that determine if the 
+// squares are occupied or not
 #pragma once
 #include <iostream>
 #include <string>
@@ -44,4 +48,5 @@ private:
 	State state;
 
 	static sf::Texture blackSquare, whiteSquare, activeWhite, activeBlack;
+
 };
