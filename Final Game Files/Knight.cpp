@@ -1,3 +1,5 @@
+// This cpp File contains all the code that relates to the Knight piece in the game of chess. 
+// This File contains the code to determine the color of the piece and the movement pattern the Knight has in a regular game.
 #include "Knight.hpp"
 
 Knight::Knight() : Piece()
@@ -73,4 +75,5 @@ void Knight::movementSquares(Board& gameBoard)
 	{
 		gameBoard.getSquares((ChessCol)(i - 2), row - 1)->setState(ACTIVE);
 	}
+
 }
