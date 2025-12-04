@@ -1,5 +1,5 @@
-// This Header file contains the class for the back button. The back button will allow the player to undo a 
-//decision they made in game and return them to a previous move
+// This Header file contains the class for the back button. The back button will allow the player to go back to 
+// main menu if they chose the wrong option
 #pragma once
 #include <SFML/Graphics.hpp>
 
@@ -20,3 +20,4 @@ public:
 	~BackButton() {}
 
 };
+
