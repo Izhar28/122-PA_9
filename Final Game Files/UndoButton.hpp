@@ -1,3 +1,5 @@
+// This Header file contains the class for the Undo button. The Undo button will allow the player to undo a 
+// decision they made in game and return them to a previous move
 #pragma once
 #include <SFML/Graphics.hpp>
 
@@ -16,4 +18,5 @@ public:
 	}
 
 	~UndoButton() {}
+
 };
