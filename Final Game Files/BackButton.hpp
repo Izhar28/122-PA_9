@@ -1,5 +1,6 @@
 // This Header file contains the class for the back button. The back button will allow the player to go back to 
-// main menu if they chose the wrong option
+// main menu if they chose the wrong option. This class also prints the Back button to the menu for the player to click on 
+// once they chose a option to polay the game.
 #pragma once
 #include <SFML/Graphics.hpp>
 
@@ -20,4 +21,5 @@ public:
 	~BackButton() {}
 
 };
+
 
