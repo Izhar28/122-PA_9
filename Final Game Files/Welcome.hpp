@@ -1,3 +1,5 @@
+// This Header File contains a class that contains the welcome screen when you first load up the game.
+// This also sets the the texture of the background to be the welcome screen when ran.
 #pragma once
 #include <SFML/Graphics.hpp>
 
@@ -16,4 +18,5 @@ public:
 	}
 
 	~Welcome() {}
+
 };
