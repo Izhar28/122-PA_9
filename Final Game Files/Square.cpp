@@ -1,3 +1,6 @@
+// This cpp File uses the class from the Square.hpp File to assign the colors to the squares,
+// then to activate the squares, and then to set the squares to the location they belong once 
+// assigned not occupied by another square.
 #include "Square.hpp"
 
 sf::Texture Square::blackSquare, Square::whiteSquare, Square::activeWhite, Square::activeBlack;
@@ -125,4 +128,5 @@ void Square::setState(State const newState)
 			setTexture(&activeBlack);
 		break;
 	}
+
 }
