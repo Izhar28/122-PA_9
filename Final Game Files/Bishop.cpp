@@ -1,3 +1,5 @@
+// This cpp File contains all the code that relates to the Bishop piece in the game of chess. 
+// This File contains the code to determine the color of the piece and the movement pattern the Bishop has in a regular game.
 #include "Bishop.hpp"
 
 
@@ -85,3 +87,4 @@ void Bishop::movementSquares(Board& gameBoard)
 		gameBoard.getSquares((ChessCol)c, r)->setState(ACTIVE);
 	}
 }
+
