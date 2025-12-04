@@ -4,7 +4,7 @@ Overview
 
 It's basically chess, but with a simplified ending and a fun random mode.
 
-The Rules
+#The Rules
 
 1. Moving Pieces
 
@@ -24,9 +24,9 @@ Capture the King: The game ends the moment you physically capture the opponent's
 
 Just take the King off the board to win.
 
-Game Modes
+#Game Modes
 
-Standard Mode
+#Standard Mode:
 
 Classic Setup: The board looks just like a normal chess game.
 
@@ -34,7 +34,7 @@ White pieces are at the bottom, Black pieces are at the top.
 
 Everything is where you expect it to be.
 
-Random Mode
+#Random Mode: (Currently under construction)
 
 Randomized Back Row: The heavy hitters (Rooks, Knights, Bishops, Queen) are shuffled into random spots on the back row.
 
