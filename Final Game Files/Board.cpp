@@ -1,3 +1,4 @@
+// This Header File contains the actual code and functions that print the board and deactivates the squares that are considered active.
 #include "Board.hpp"
 
 Board::Board()
@@ -88,3 +89,4 @@ void Board::initializeBoard()
 		Position.x += 100;
 	}
 }
+
