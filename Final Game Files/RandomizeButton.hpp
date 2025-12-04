@@ -1,3 +1,4 @@
+// This Header File contains a class that randomizes the location of the chess pieces.
 #pragma once
 #include <SFML/Graphics.hpp>
 
@@ -16,4 +17,5 @@ public:
 	}
 
 	~RandomizeButton() {}
+
 };
