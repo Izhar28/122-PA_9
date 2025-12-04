@@ -1,3 +1,7 @@
+// This Header File contains multiple classes that all determine different asepcts of the game.
+// For instance the class Chesscol sets the names of all the colums on the board and the struct state
+// determines if a square is is active or not, or occupied or not. This File also uses another struct that determines
+// If the player had clicked on a chess piece or not as well as the back button on the menu.
 #pragma once
 #include <iostream>
 
@@ -35,4 +39,5 @@ typedef struct blackMove
 	Clicked piece;
 	int row, prevRow;
 	bool takes;
+
 } BlackMove;
