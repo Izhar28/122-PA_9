@@ -1,3 +1,5 @@
+// This cpp File contains all the code that relates to the Queen piece in the game of chess. 
+// This File contains the code to determine the color of the piece and the movement pattern the Queen has in a regular game.
 #include "Queen.hpp"
 
 
@@ -152,4 +154,5 @@ void Queen::movementSquares(Board& gameBoard)
 			break;
 		}
 	}
+
 }
