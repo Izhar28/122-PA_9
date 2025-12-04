@@ -1,3 +1,4 @@
+// This Header File uses every Header File that is located in the Run.hpp file to run the game of chess.
 #include "Run.hpp"
 
 sf::Texture Run::welcome, Run::backDrop, Run::random, Run::standard, Run::Backtext, Run::undoButton, Run::whiteWins, Run::blackWins, Run::underConstruction;
@@ -523,3 +524,4 @@ void Run::loadTextures()
     blackWins.loadFromFile("BlackWins.png");
     underConstruction.loadFromFile("UnderConstruction.png");
 }
+
